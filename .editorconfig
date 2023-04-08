@@ -1,0 +1,22 @@
+# EditorConfig: http://EditorConfig.org
+
+# VS Code plugin: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+# top-most EditorConfig file (false as this will be a submodule in the main repo)
+root = false
+
+# Defaults for all editor files
+[*]
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+end_of_line = lf
+
+# Files with a smaller indent
+[*.yml]
+indent_size = 2
+
+# Jinja2 template files
+[*.j2]
+end_of_line = lf

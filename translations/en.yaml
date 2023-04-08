@@ -1,0 +1,5 @@
+---
+configuration:
+  DNS_SERVER_DOMAIN:
+    name: DNS Server Domain
+    description: The primary domain name used by this DNS Server to identify itself.

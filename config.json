@@ -1,0 +1,47 @@
+{
+    "arch": [
+      "amd64",
+      "armv7",
+      "armhf",
+      "aarch64"
+    ],
+    "name": "Technitium DNS Server",
+    "version": "11.0.3",
+    "slug": "technitium",
+    "description": "Technitium DNS Server",
+
+
+    "boot": "auto",
+    "ingress": true,
+    "ingress_port": 5380,
+    "map": [
+      "ssl"
+    ],
+    "panel_icon": "mdi:dns",
+    "ports": {
+      "53/udp": "53/udp",
+      "53/tcp": "53/tcp",
+      "5380/tcp": null,
+      "53443/tcp": null,
+      "853/udp": null,
+      "853/tcp": null
+    },
+    "ports_description": {
+      "53/udp": "Port for exposing the DNS server (UDP)",
+      "53/tcp": "Port for exposing the DNS server (TCP)",
+      "5380/tcp": "Port for web console access",
+      "53443/tcp": "Port for web console HTTPS access",
+      "853/udp": "Port for DNS-over-QUIC service",
+      "853/tcp": "Port for DNS-over-TLS service"
+    },
+    "startup": "services",
+    "url": "https://github.com/vrelk/hass-technitium",
+
+
+    "options": {
+      "DNS_SERVER_DOMAIN": ""
+    },
+    "schema": {
+      "DNS_SERVER_DOMAIN": "str"
+    }
+  }
